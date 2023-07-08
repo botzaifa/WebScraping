@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Review Scraper</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Product Review Scraper</h1>
+    <form action="{{ url_for('index') }}" method="POST">
+        <input type="text" name="content" placeholder="Enter a product name">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
